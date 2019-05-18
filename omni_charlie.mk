@@ -9,10 +9,10 @@ $(call inherit-product, vendor/omni/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := Realme
-PRODUCT_DEVICE := RMX1851
+PRODUCT_DEVICE := charlie
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_MODEL := RMX1851
-PRODUCT_NAME := omni_RMX1851
+PRODUCT_NAME := omni_charlie
 
 # enable stock zip packages flash
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \

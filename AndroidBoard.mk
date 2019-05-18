@@ -1,5 +1,5 @@
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter RMX1851,$(TARGET_DEVICE)),)
+ifneq ($(filter charlie,$(TARGET_DEVICE)),)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif

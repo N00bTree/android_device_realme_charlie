@@ -1,5 +1,5 @@
 # Device path
-LOCAL_PATH := device/realme/RMX1851
+LOCAL_PATH := device/realme/charlie
 
 # Architecture
 TARGET_ARCH := arm64
