@@ -73,7 +73,6 @@ TARGET_RECOVERY_QCOM_RTC_FIX := true
 
 # TWRP
 BOARD_USE_FRAMEBUFFER_ALPHA_CHANNEL := true
-DEVICE_RESOLUTION := 1080x2340
 DEVICE_SCREEN_WIDTH := 1080
 DEVICE_SCREEN_HEIGHT := 2340
 RECOVERY_SDCARD_ON_DATA := true
@@ -90,11 +89,6 @@ TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_DEFAULT_EXTERNAL_STORAGE := true
-TW_INCLUDE_CRYPTO := true
-TW_CRYPTO_FS_TYPE := "ext4"
-TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/bootdevice/by-name/userdata"
-TW_CRYPTO_MNT_POINT := "/data"
-TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,barrier=0,data=ordered"
 TW_EXTRA_LANGUAGES := true
 TW_DEFAULT_LANGUAGE := en_EN
 TW_NO_USB_STORAGE := false
@@ -105,3 +99,13 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_USE_TOOLBOX := true
 TW_USE_QCOM_HAPTICS_VIBRATOR := true
 TW_IGNORE_MISC_WIPE_DATA := true
+
+# Crypto
+TW_INCLUDE_CRYPTO := true
+TW_CRYPTO_FS_TYPE := "ext4"
+TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/bootdevice/by-name/userdata"
+TW_CRYPTO_MNT_POINT := "/data"
+TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,barrier=0,data=ordered"
+
+# Debug
+TWRP_INCLUDE_LOGCAT := true

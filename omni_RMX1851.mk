@@ -16,6 +16,10 @@ PRODUCT_NAME := omni_RMX1851
 
 # enable stock zip packages flash
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.treble.enabled=true \
+    persist.sys.usb.config=mtp \
+    persist.service.adb.enable=1 \
+    persist.service.debuggable=1 \
     ro.secure=1 \
     ro.adb.secure=0 \
     ro.allow.mock.location=0
