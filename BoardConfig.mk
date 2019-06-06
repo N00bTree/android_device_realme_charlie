@@ -90,7 +90,6 @@ TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_PREBUILT_DTBOIMAGE := $(LOCAL_PATH)/prebuilt/dtbo.img
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery.fstab
-TARGET_RECOVERY_WIPE := $(LOCAL_PATH)/recovery.wipe
 
 # Qcom specific fixes
 TARGET_RECOVERY_QCOM_RTC_FIX := true
@@ -108,8 +107,6 @@ TW_NO_BATT_PERCENT := false
 TW_USE_TOOLBOX := true
 TW_IGNORE_MISC_WIPE_DATA := true
 TW_HAS_EDL_MODE := true
-USE_RECOVERY_INSTALLER := true
-RECOVERY_INSTALLER_PATH := $(LOCAL_PATH)/installer
 
 # Display
 TW_THEME := portrait_hdpi
@@ -121,15 +118,6 @@ TW_H_OFFSET := -80
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_NO_SCREEN_BLANK := true
 TW_NO_SCREEN_TIMEOUT := true
-
-# Storage & FS
-TW_HAS_MTP := true
-TW_MTP_DEVICE := /dev/mtp_usb
-TW_INTERNAL_STORAGE_PATH := "/data/media"
-TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
-TW_EXTERNAL_STORAGE_PATH := "/external_sd"
-TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
-TW_DEFAULT_EXTERNAL_STORAGE := true
 
 # Locale
 TW_EXTRA_LANGUAGES := true
