@@ -8,10 +8,10 @@ $(call inherit-product, vendor/pb/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := Realme
-PRODUCT_DEVICE := charlie
+PRODUCT_DEVICE := RMX1851
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_MODEL := RMX1851
-PRODUCT_NAME := omni_charlie
+PRODUCT_NAME := omni_RMX1851
 
 # enable stock zip packages flash
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
@@ -21,4 +21,5 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.service.debuggable=1 \
     ro.secure=1 \
     ro.adb.secure=0 \
-    ro.allow.mock.location=0
+    ro.allow.mock.location=0 \
+    ro.boot.avb_version=1.0

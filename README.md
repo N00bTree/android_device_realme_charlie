@@ -1,8 +1,8 @@
-# TWRP device tree for Realme charlie (Realme 3 Pro)
+# TWRP device tree for Realme RMX1851 (Realme 3 Pro)
 
 ## About Device
 
-![Realme charlie](https://static.realme.net/page/realme-3-pro/images/pc/8-Speedway-Design-id-1-9a68411c86.png)
+![Realme RMX1851](https://static.realme.net/page/realme-3-pro/images/pc/8-Speedway-Design-id-1-9a68411c86.png)
 
 ### Specifications
 
@@ -78,12 +78,12 @@ Battery life | Endurance rating 91h
 
 _Note: Above test results may(not) vary._
 
-**This device tree can be used to build twrp for Realme charlie (Realme 3 Pro)**
+**This device tree can be used to build twrp for Realme RMX1851 (Realme 3 Pro)**
 
 ## Build Instructions
 ```sh
 export ALLOW_MISSING_DEPENDENCIES=true
 source build/envsetup.sh
-lunch omni_charlie-eng
+lunch omni_RMX1851-eng
 mka recoveryimage
 ```
