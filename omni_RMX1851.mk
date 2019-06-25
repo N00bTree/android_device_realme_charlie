@@ -21,5 +21,4 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.service.debuggable=1 \
     ro.secure=1 \
     ro.adb.secure=0 \
-    ro.allow.mock.location=0 \
-    ro.boot.avb_version=1.0
+    ro.allow.mock.location=0
